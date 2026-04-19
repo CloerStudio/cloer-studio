@@ -1,0 +1,76 @@
+:root {
+    --clr-sage: #98A89A;
+    --clr-sage-dark: #4A5D53;
+    --clr-sage-light: #C1CDC3;
+    --clr-graphite: #2C3630;
+    --clr-off-white: #FDFDFD;
+    --clr-accent: #D4A373;
+    --clr-white: #ffffff;
+    --ff-heading: 'Playfair Display', serif;
+    --ff-body: 'Outfit', sans-serif;
+    --container-max-width: 1200px;
+    --section-padding: 6rem 2rem;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-body);
+    background-color: var(--clr-off-white);
+    color: var(--clr-graphite);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-heading);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-primary { background-color: var(--clr-sage-dark); color: white; }
+.btn-primary:hover { background-color: var(--clr-sage); transform: translateY(-3px); }
+.btn-secondary { border: 1px solid var(--clr-sage-dark); color: var(--clr-sage-dark); background: transparent; }
+.btn-secondary:hover { background-color: var(--clr-sage-dark); color: white; }
+
+.section-title { font-size: 2.5rem; margin-bottom: 3rem; color: var(--clr-sage-dark); text-align: center; }
+
+/* Fixed CTA */
+.fixed-cta {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--clr-accent);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(212, 163, 115, 0.4);
+    z-index: 999;
+}
+
+/* Animations will be handled by Framer Motion in React */
