@@ -5,12 +5,7 @@ const Popout: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Logic 1: Appear after 7 seconds
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 7000);
-
-    // Logic 2: Appear after scrolling 50% of the page
+    // Logic: Appear after scrolling 50% of the page
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.body.offsetHeight;
@@ -26,7 +21,6 @@ const Popout: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      clearTimeout(timer);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
