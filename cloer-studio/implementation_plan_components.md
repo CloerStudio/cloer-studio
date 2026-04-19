@@ -8,70 +8,70 @@ Ten dokument zawiera techniczne i wizualne detale każdego komponentu, który tw
 **Plik:** `src/components/Header.tsx`
 - **Cel:** Zapewnienie szybkiej nawigacji i identyfikacji marki.
 - **Kroki planu:**
-    - [ ] Implementacja "Sticky Header" (podąża za skrolującym użytkownikiem).
-    - [ ] Dodanie efektu `backdrop-filter: blur(10px)` dla nowoczesnego wyglądu na tle sekcji Hero.
-    - [ ] Responsywne menu (hamburger na urządzeniach mobilnych).
-    - [ ] Linki: O mnie, Portfolio, Usługi, FAQ, Kontakt.
+    - [x] Implementacja "Sticky Header" (podąża za skrolującym użytkownikiem).
+    - [x] Dodanie efektu `backdrop-filter: blur(10px)` dla nowoczesnego wyglądu na tle sekcji Hero.
+    - [x] Responsywne menu (hamburger na urządzeniach mobilnych).
+    - [x] Linki: O mnie, Portfolio, Usługi, FAQ, Kontakt.
 
 ## 2. Hero Section (Sekcja powitalna)
 **Plik:** `src/components/Hero.tsx`
 - **Cel:** Natychmiastowe przyciągnięcie uwagi i przekazanie głównej wartości.
 - **Kroki planu:**
-    - [ ] Dodanie dużego nagłówka (H1) z fontem szeryfowym: "Chcesz działać regularnie...".
-    - [ ] Implementacja przycisku "Learn More" z płynnym przewijaniem do sekcji Usługi.
-    - [ ] Integracja tła: Subtelna grafika lub zdjęcie studio (zgodnie z listą mediów).
-    - [ ] Animacja wejścia (fade-in + slide-up) dla tekstów.
+    - [x] Dodanie dużego nagłówka (H1) z fontem Anton: "Chcesz działać regularnie...".
+    - [x] Implementacja przycisku "Poznaj usługi" z płynnym przewijaniem do sekcji Usługi.
+    - [x] Integracja tła: Wysokiej jakości grafika studio (wygenerowana).
+    - [x] Animacja wejścia (fade-in + slide-up) dla tekstów.
 
 ## 3. About (O mnie)
 **Plik:** `src/components/About.tsx`
 - **Cel:** Budowanie zaufania i personalizacja marki.
 - **Kroki planu:**
-    - [ ] Układ "Split Layout": Zdjęcie po jednej stronie, tekst po drugiej.
-    - [ ] Stylizacja zdjęcia: Zaokrąglone rogi lub nieregularne kształty (organic shapes).
-    - [ ] Dodanie krótkiego bio podkreślającego misję Cloer Studio.
+    - [x] Układ "Split Layout": Zdjęcie po jednej stronie, tekst po drugiej.
+    - [x] Stylizacja zdjęcia: Cienka ramka, zaokrąglone rogi.
+    - [x] Dodanie bio podkreślającego współpracę i oszczędność czasu.
 
 ## 4. Portfolio (Realizacje)
 **Plik:** `src/components/Portfolio.tsx`
 - **Cel:** Prezentacja jakości contentu.
 - **Kroki planu:**
-    - [ ] Stworzenie zakładek (Tabs): "Rolki" vs "Posty".
-    - [ ] **Rolki:** Pionowe kontenery (aspekt 9:16) z efektem hover (odtwarzanie wideo lub zoom okładki).
-    - [ ] **Posty:** Kwadratowa siatka (Grid) z lightboxem (powiększanie po kliknięciu).
-    - [ ] Użycie `CSS Grid` dla responsywności (1 kolumna mobile -> 3 kolumny desktop).
+    - [x] Stworzenie zakładek (Tabs): "Wszystkie", "Rolki" oraz "Posty".
+    - [x] **Rolki:** Pionowe kontenery (9:16) z estetycznymi przykładami montażu.
+    - [x] **Posty:** Kwadratowa siatka (1:1) z wykorzystaniem przesłanych grafik.
+    - [x] Efekt hover z nakładką (overlay) i animacją przy użyciu Framer Motion.
 
 ## 5. Services (Usługi)
 **Plik:** `src/components/Services.tsx`
 - **Cel:** Jasne przedstawienie oferty.
 - **Kroki planu:**
-    - [ ] Trzy karty usług:
+    - [x] Trzy karty usług:
         1. Tworzenie contentu (wideo/foto).
         2. Wsparcie Social Media (strategia).
         3. Copywriting (teksty, które sprzedają).
-    - [ ] Dodanie delikatnych ikon lub ilustracji liniowych dla każdej usługi.
-    - [ ] Efekt hover na kartach: subtelny cień i podniesienie (lift up).
+    - [x] Dodanie delikatnych ikon lub ilustracji liniowych dla każdej usługi.
+    - [x] Efekt hover na kartach: subtelny cień i podniesienie (lift up).
 
 ## 6. Tools (Narzędzia)
 **Plik:** `src/components/Tools.tsx`
 - **Cel:** Podkreślenie profesjonalizmu przez używane narzędzia.
 - **Kroki planu:**
-    - [ ] Pasek z monochromatycznymi ikonami (Canva, Notion, Adobe, Instagram).
-    - [ ] Płynne przewijanie ikon (Infinite Marquee) lub statyczny, elegancki rząd.
+    - [x] Pasek z monochromatycznymi ikonami (Canva, CapCut, Notion, DaVinci Resolve, Photoshop).
+    - [x] Płynne przewijanie ikon (Infinite Marquee) lub statyczny, elegancki rząd.
 
 ## 7. FAQ (Częste pytania)
 **Plik:** `src/components/FAQ.tsx`
 - **Cel:** Rozwianie wątpliwości przed kontaktem.
 - **Kroki planu:**
-    - [ ] Implementacja komponentu typu Accordion (rozwijane listy).
-    - [ ] Płynne animacje otwierania/zamykania (używając Framer Motion lub CSS Transitions).
-    - [ ] Pytania o: czas realizacji, proces pracy, wycenę.
+    - [x] Implementacja komponentu typu Accordion (rozwijane listy).
+    - [x] Płynne animacje otwierania/zamykania (używając Framer Motion lub CSS Transitions).
+    - [x] Pytania o: czas realizacji, proces pracy, wycenę.
 
 ## 8. Contact (Formularz)
 **Plik:** `src/components/Contact.tsx`
 - **Cel:** Umożliwienie szybkiego wysłania zapytania.
 - **Kroki planu:**
-    - [ ] Pola: Imię, E-mail, Temat, Wiadomość.
-    - [ ] Walidacja pól "na żywo".
-    - [ ] Design w stylu "Minimal Form" - cienkie linie, brak grubych obramowań.
+    - [x] Pola: Imię, E-mail, Temat, Wiadomość.
+    - [x] Walidacja pól "na żywo".
+    - [x] Design w stylu "Minimal Form" - cienkie linie, brak grubych obramowań.
 
 ## 9. Footer (Stopka)
 **Plik:** `src/components/Footer.tsx`
@@ -85,8 +85,8 @@ Ten dokument zawiera techniczne i wizualne detale każdego komponentu, który tw
 **Plik:** `src/components/Popout.tsx` oraz `src/App.tsx` (CTA)
 - **Cel:** Złapanie uwagi uciekającego użytkownika.
 - **Kroki planu:**
-    - [ ] **Fixed CTA:** Stały przycisk "Zacznijmy współpracę" w prawym dolnym rogu.
-    - [ ] **Popout:** Okienko z ofertą specjalną lub lead magnetem, pojawiające się po scrollu 50% strony lub po 30 sekundach.
+    - [x] **Fixed CTA:** Stały przycisk "Zacznijmy współpracę" w prawym dolnym rogu.
+    - [x] **Popout:** Okienko z ofertą specjalną lub lead magnetem, pojawiające się po scrollu 50% strony lub po 30 sekundach.
 
 ---
 

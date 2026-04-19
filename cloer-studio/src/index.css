@@ -6,8 +6,8 @@
     --clr-off-white: #FDFDFD;
     --clr-accent: #D4A373;
     --clr-white: #ffffff;
-    --ff-heading: 'Playfair Display', serif;
-    --ff-body: 'Outfit', sans-serif;
+    --ff-heading: 'Anton', sans-serif;
+    --ff-body: 'Montserrat', sans-serif;
     --container-max-width: 1200px;
     --section-padding: 6rem 2rem;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,6 +33,7 @@ body {
 
 h1, h2, h3 {
     font-family: var(--ff-heading);
+    font-weight: 400;
 }
 
 .container {
@@ -74,3 +75,37 @@ h1, h2, h3 {
 }
 
 /* Animations will be handled by Framer Motion in React */
+
+/* Fixed CTA Button */
+.fixed-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--clr-sage-dark);
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-family: var(--ff-body);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(44, 54, 48, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justifyContent: center;
+}
+
+.fixed-cta:hover {
+  transform: translateY(-5px);
+  background-color: var(--clr-graphite);
+}
+
+@media (max-width: 768px) {
+  .fixed-cta {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
